@@ -1,0 +1,34 @@
+# compile with g++
+CC=g++
+
+# Set compiler options here.
+#
+CXXFLAGS = -g -Wall -std=c++11 
+
+# set the name of the executable file to compile here
+PROGRAM = l5r
+
+OBJS := $(patsubst %.cpp,%.o, $(wildcard *.cpp) $(wildcard */*.cpp))
+
+ifeq ($(GUI), Y)
+	CXXFLAGS += -D GUI_SUPPORT
+endif
+
+ifeq ($(PLATFORM), WINDOWS)
+	CXXFLAGS += -D WINDOWS
+else
+	CXXFLAGS += -D LINUX
+endif
+
+ifeq ($(TESTS), Y)
+	CXXFLAGS += -D TESTS
+endif
+
+$(PROGRAM): $(OBJS)
+	$(CC) $(OBJS) -o $(PROGRAM) -lm
+
+clean:
+	rm -f $(PROGRAM) $(OBJS)
+
+run: $(PROGRAM)
+	./$(PROGRAM)

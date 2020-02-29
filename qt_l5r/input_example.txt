@@ -1,0 +1,19 @@
+PLAYER 3 0 0 5 4
+24 END
+24 END
+24 END
+24 END
+
+THIS_PLAYER 4 0 6 6 4
+15 Cost: 0 AttackBonus: 2 DefenceBonus: 0 END
+10 Cost: 8 AttackBonus: 8 DefenceBonus: 8 END
+4 Cost: 0 AttackBonus: 0 DefenceBonus: 2 END
+4 Cost: 0 AttackBonus: 0 DefenceBonus: 2 END
+15 Cost: 0 AttackBonus: 2 DefenceBonus: 0 END
+3 Cost: 0 AttackBonus: 2 DefenceBonus: 0 END
+
+5 Cost: 5 Attack: 3 Defence: 2 Honour: 2 END
+5 Cost: 5 Attack: 3 Defence: 2 Honour: 2 END
+8 Cost: 5 Attack: 2 Defence: 3 Honour: 2 END
+28 Cost: 2 Value: 2 END
+
